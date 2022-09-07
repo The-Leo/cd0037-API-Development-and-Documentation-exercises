@@ -120,7 +120,6 @@ def create_app(test_config=None):
                     "total_books": len(Book.query.all()),
                 }
             )
-
         except:
             abort(422)
 

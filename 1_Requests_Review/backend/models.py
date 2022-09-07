@@ -3,9 +3,9 @@ from sqlalchemy import Column, String, Integer, create_engine
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-database_name = "bookshelf"
+database_name = "plants"
 database_path = "postgresql://{}:{}@{}/{}".format(
-    "student", "student", "localhost:5432", database_name
+    "postgres", "abc", "localhost:5432", database_name
 )
 
 db = SQLAlchemy()
